@@ -1,0 +1,28 @@
+mode: development # Use "hyde publish -c prod.yaml to have this automatically switch to production
+media_root: media # Relative path from content folder.
+media_url: /media # URL where the media files are served from.
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.textlinks.TextlinksPlugin
+context:
+    data:
+        site_title: '{Noi}.Narisak'
+        author:
+            name: Noi Narisak
+            url: "http://noinarisak.github.com"
+        google_analytics_id: UA-XXXXX-YY
+        home_url: index.html
+        menu:
+            - title: Resume
+              url: resume.html
+            - title: Projects
+              type: node
+              url: projects/index.html
+            - title: Wiki
+              url: wiki.html
+            - title: Contact
+              url: contact.html
+    providers:
+        versions: app-versions.yaml

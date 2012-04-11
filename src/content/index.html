@@ -1,0 +1,53 @@
+---
+title: Landing Page
+description: Test description
+---
+
+{% extends "topbar.j2" %}
+{# {% extends "columns.j2" %} #}
+
+{% block css %}
+<style type="text/css">
+  body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+  }
+</style>
+{% endblock css %}
+
+{% block content %}
+ 
+ <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="hero-unit">
+	<h1>Stay Hungry, Stay Foolish</h1>
+	<blockquote>
+	<p>"..everything - all external expectations, all pride, all fear of
+	embarrassment or failure - these things just fall away in the face of death, leaving only what is truly
+	important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you
+	have something to lose. You are already naked. There is no reason not to follow your heart."</p>
+	<small class="pull-right">Steve Jobs, Stanford Commencement Speech</small>
+	</blockquote>
+	<!-- <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
+  </div>
+  <div class="well"><strong>Welcome</strong>, I hope you enjoy my work</div>
+
+  <!-- Example row of columns -->
+  <div class="row">
+	<div class="span4">
+	  <h2>Projects</h2>
+	   <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	  <p><a class="btn" href="#">View details &raquo;</a></p>
+	</div>
+	<div class="span4">
+	  <h2>Resume</h2>
+	   <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	  <p><a class="btn" href="#">View details &raquo;</a></p>
+   </div>
+	<div class="span4">
+	  <h2>Wiki</h2>
+	  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	  <p><a class="btn" href="#">View details &raquo;</a></p>
+	</div>
+  </div>
+      
+{% endblock content %}

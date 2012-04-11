@@ -1,0 +1,5 @@
+#!/cygdrive/d/proj/noinarisak.github.com/bin/python2.6
+# EASY-INSTALL-SCRIPT: 'Markdown==2.1.1','markdown_py'
+__requires__ = 'Markdown==2.1.1'
+import pkg_resources
+pkg_resources.run_script('Markdown==2.1.1', 'markdown_py')
