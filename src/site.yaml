@@ -18,8 +18,9 @@ context:
             - title: Resume
               url: resume.html
             - title: Projects
-              type: node
-              url: projects/index.html
+              #type: node
+              #url: projects/index.html
+              url: projects.html
             - title: Wiki
               url: wiki.html
             - title: Contact

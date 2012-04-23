@@ -1,9 +1,0 @@
-#!/cygdrive/d/proj/noinarisak.github.com/bin/python2.6
-# EASY-INSTALL-ENTRY-SCRIPT: 'hyde==0.8.4','console_scripts','hyde'
-__requires__ = 'hyde==0.8.4'
-import sys
-from pkg_resources import load_entry_point
-
-sys.exit(
-   load_entry_point('hyde==0.8.4', 'console_scripts', 'hyde')()
-)

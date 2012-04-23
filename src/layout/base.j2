@@ -15,10 +15,9 @@
     {% block basecss %}
     <link href="{{ media_url('css/bootstrap.css') }}" rel="stylesheet">
     <!-- <link href="{{ media_url('css/style.css') }}" rel="stylesheet"> -->
+    {% block css %}{% endblock %}
     <link href="{{ media_url('css/bootstrap-responsive.css') }}" rel="stylesheet">
     {% endblock basecss %}
-    {% block css %}{% endblock %}
-
 
 
     {% block favicons %}
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ media_url('img/appleimgim-touch-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ media_url('img/apple-touch-icon-114x114.png') }}">
     {% endblock favicons %}
-    
+
     {% block headjs %}
     {% endblock headjs %}
 
@@ -64,28 +63,30 @@
     
     {% block js %}
     {# Javascript at the bottom for fast page loading #}
-    <!--{% block jquery %}-->
-    <!--{# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary #}-->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script> -->
-    <!-- <script>window.jQuery || document.write('<script src="{{ media_url('js/libs/jquery-1.5.1.min.js.js') }}">\x3C/script>')</script> -->
-    <!--{% endblock jquery %}-->
+    {% block jquery %}
+    {# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary #}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ media_url('js/jquery-1.7.2.min.js') }}">\x3C/script>')</script>
+    {% endblock jquery %}
 
     {% block bootstrap_scripts %}
     {# Uncomment any of these lines to enable that plugin on your site #}
-    <script src="{{ media_url('js/jquery.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-transition.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-alert.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-modal.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-dropdown.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-scrollspy.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-tab.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-tooltip.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-popover.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-button.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-collapse.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-carousel.js') }}"></script>
-    <script src="{{ media_url('js/bootstrap-typeahead.js') }}"></script>
-	
+    <script src="{{ media_url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ media_url('js/jquery-1.7.2.min.js') }}"></script>
+    <!--<script src="{{ media_url('js/jquery.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-transition.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-alert.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-modal.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-dropdown.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-scrollspy.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-tab.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-tooltip.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-popover.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-button.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-collapse.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-carousel.js') }}"></script>-->
+    <!--<script src="{{ media_url('js/bootstrap-typeahead.js') }}"></script>-->
+
     {% endblock bootstrap_scripts %}
 
     {% block scripts %}
