@@ -1,6 +1,6 @@
 ---
 title: Contact
-description: To-Do
+description: Contact
 ---
 
 {% extends "topbar.j2" %}
@@ -17,8 +17,28 @@ description: To-Do
 
 {% block content %}
 
-<h1>Contact</h1>
-<h1>Bootstrap starter template</h1>
-<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-
+<div class="page-header">
+	<h1>Contacts</h1>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#1" data-toggle="tab">Usual</a></li>
+		<li><a href="#2" data-toggle="tab">Social</a></li>
+	</ul>
+</div>
+<div class="tab-content">
+	<div class="tab-pane active" id="1">
+		<h3>Email</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+	</div>
+	<div class="tab-pane" id="2">
+		<h3>LinkedIn</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+	</div>
+</div>
 {% endblock content %}
