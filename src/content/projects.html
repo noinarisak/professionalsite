@@ -1,6 +1,6 @@
 ---
-title: To-Do
-description: To-Do
+title: Projects
+description: Projects
 ---
 
 {% extends "topbar.j2" %}
@@ -16,9 +16,52 @@ description: To-Do
 {% endblock css %}
 
 {% block content %}
-<h1>Projects</h1>
-<br/>
-<h1>Bootstrap starter template</h1>
-<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+<div class="page-header">
+	<h1>Projects</h1>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#1" data-toggle="tab">Professional</a></li>
+		<li><a href="#2" data-toggle="tab">Pro Bono</a></li>
+		<li><a href="#3" data-toggle="tab">GitHub</a></li>
+		<li><a href="#4" data-toggle="tab">...</a></li>
+	</ul>
+</div>
+<div class="tab-content">
+	<div class="tab-pane active" id="1">
+		<h3>Professional Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+		<h3>Professional Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+	</div>
+	<div class="tab-pane" id="2">
+		<h3>Pro Bono Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+		<h3>Pro Bono Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+	</div>
+	<div class="tab-pane" id="3">
+		<h3>Github Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+		<h3>Github Item 1</h3>
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+		</div>
+	</div>
+	<div class="tab-pane" id="4">
+		<p>I'm in Section ...</p>
+	</div>
+</div>
 
 {% endblock content %}
